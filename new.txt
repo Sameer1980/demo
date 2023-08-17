@@ -1,0 +1,7 @@
+Hello from git!!
+
+Added one more line to file. !!
+
+Modification to check difference !!
+
+Modification done for merge!!
