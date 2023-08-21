@@ -1,0 +1,110 @@
+git --version
+
+pwd
+
+git config --global user.name "Samir Banerjee"
+
+git config --global user.email samir.banerjee@capgemini.com
+
+git config --global user.name
+git config --global user.email -- to check username and emailID.
+
+
+cd /c/demo/
+
+git init
+Initialized empty Git repository in C:/Demo/.git/ --> hidden file.
+
+git status
+
+git add test.txt --> create a .txt or any other type of file.(to staging)
+
+git status --> to check status
+
+git commit -m "first commit"
+
+git status
+
+Make some changes to .txt file .
+
+git add test.txt --> Whenever any changes made to file use git add.
+
+git commit -m "updated version of test.txt"
+git commit -a -m "index.html modified" --> -a is for adding already existing file so no need to do Git Add . -a will do. -m is for commit.
+
+git status
+
+git config --edit --global
+
+git config --list 
+
+git log --> git activity history
+git log --oneline
+git log -2 
+
+git mv test.txt new.txt  --> rename file.
+
+git branch
+
+git branch  newBranch --> to create a new branch.
+
+git checkout newBranch --> to move to newly created branch.
+
+git merge newBranch --> Merge new branch to master branch. 
+
+git ls-files --> to find out all files in current branch.
+
+git branch --merged
+
+git branch --no-merged
+
+git branch -d B1 --> Delete one branch
+
+git log --oneline
+git reset <commit_id> --> all commits after the commit_id will be discarded.
+
+git revert <commit_id> --no-edit --> it will not take to the Vi editor.
+
+.gitignore --> ignore certain files.
+
+git remote add origin <https://github repository path> ---> origin is the name of the remote repository.
+git branch -M main
+git push -u origin Main / git push -u --all origin
+git remote --> to check remote called origin or not.	
+git remote -v --> to check each remote and also its url.
+git remote remove origin --> to remove a remote called Origin.
+
+code . --> to open in VS code.
+
+
+git clone <https://github repository path>
+git remote --> to check names of all remote repositories.
+
+git pull -- > updates both repository and workspace .
+git fetch --> only updates repository . Has to be used with git merge.
+
+git push -f demo main --> force push to central repo demo if normal push is not working.
+
+http://localhost:8080/ -- for jenkins
+
+
+
+ls -al ~/.ssh --> to find SSH key directory
+
+ssh-keygen -t rsa -b 4096 -C "samir.banerjee@capgemini.com"
+$ ssh-keygen -t ed25519 -C your_email@example.com --> for SSH key authentication
+
+ssh -T git@github.com --> to check SSH authentication
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+
+
+
+
+
+
+
+
