@@ -1,2 +1,9 @@
 test2.txt
 *.log
+prog1.py
+Prog2.py
+Prog3.py
+pyvenv.cfg
+error.log
+new.txt
+New_branch_File.txt
